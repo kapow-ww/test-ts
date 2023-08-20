@@ -82,12 +82,20 @@ describe("Question 2 :", () => {
 });
 
 describe("Question 3 :", () => {
-  it("test 1 : ", () => {
+  it("test 1", () => {
     const result = getQuestionPart(["BATHROOM", "BATHSALT", "BLOODBATH"]);
     expect(result).toEqual(["ROOM", "SALT", "BLOOD"]);
   });
-  it("test 2 : ", () => {
+  it("test 2", () => {
     const result = getQuestionPart(["BEFRIEND", "GIRLFRIEND", "FRIENDSHIP"]);
     expect(result).toEqual(["BE", "GIRL", "SHIP"]);
+  });
+  it("test 3", () => {
+    const result = getQuestionPart(["HANDSOME", "SOMETHING", "SOMEBODY"]);
+    expect(result).toEqual(["HAND", "THING", "BODY"]);
+  });
+  it("test 4", () => {
+    const result = getQuestionPart(["FULLMOON", "HELPFULLY", "FULLNAME"]);
+    expect(result).toEqual(["MOON", "HELPY", "NAME"]);
   });
 });
