@@ -59,12 +59,15 @@ export function getHandScore(input: string): number {
     console.log(err);
   }
 
+  console.log(handInfo);
+
   if (isSameFace(handInfo, "A")) {
     result = 35;
   } else if (
     isSameFace(handInfo, "J") ||
     isSameFace(handInfo, "Q") ||
-    isSameFace(handInfo, "K")
+    isSameFace(handInfo, "K") ||
+    isSameFace(handInfo, handInfo[0].face)
   ) {
     result = 32.5;
   } else {
